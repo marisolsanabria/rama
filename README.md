@@ -1,14 +1,14 @@
 # rama
 App to organize all the activities and process that a lawyer needs remember
 
-##Author: Marisol Sanabria Naranjo
+## Author: Marisol Sanabria Naranjo
 
 
-##Resume
+## Resume
 
-This app is create for lawyers, this will help them to organize their process taking into account the limit time to answer each of this ones and all the activities they have to solve 
+This app is create for lawyers, this will help them to organize their process taking into account the limit time to answer each of this ones and all the activities they have to solve, it's being developed in android studio, using java, kotlin and firebase.
 
-##Objectives
+## Objectives
 
 
 - Create different roles to the users like, admon, client, and delivery man
@@ -17,3 +17,4 @@ This app is create for lawyers, this will help them to organize their process ta
 - Show al the important activities and process that our user need to do on the current day, week or month, this will be shown in a calendar view too.
 - Develope a forum fragment with the purpose of create a community where each member can find information or help from his/her 
 colleagues
+

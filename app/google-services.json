@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1010890024529",
+    "firebase_url": "https://rama-71794-default-rtdb.firebaseio.com",
+    "project_id": "rama-71794",
+    "storage_bucket": "rama-71794.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010890024529:android:7b97176005ff4105beba70",
+        "android_client_info": {
+          "package_name": "com.example.rama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010890024529-biqn3p6nqdsbn79dg36uc9s2tkjnr8kt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rama",
+            "certificate_hash": "2087d9dc335123421548d1fb8955b28a87effcab"
+          }
+        },
+        {
+          "client_id": "1010890024529-0nu8pg7o6rf8tclh6a1t47tvtdqn59eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCImcMhgO3252311fXAYLoDA0x2cUun3E8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010890024529-0nu8pg7o6rf8tclh6a1t47tvtdqn59eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

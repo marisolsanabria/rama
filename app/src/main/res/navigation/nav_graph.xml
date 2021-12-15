@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendar">
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.example.rama.fragments.calendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_forumFragment"
+            app:destination="@id/forum" />
+        <action
+            android:id="@+id/action_calendar_to_addProceso"
+            app:destination="@id/addProceso" />
+        <action
+            android:id="@+id/action_calendar_to_addActuacion"
+            app:destination="@id/addActuacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/forum"
+        android:name="com.example.rama.fragments.forumFragment"
+        android:label="fragment_forum"
+        tools:layout="@layout/fragment_forum" >
+        <action
+            android:id="@+id/action_forumFragment_to_processFragment"
+            app:destination="@id/process" />
+    </fragment>
+    <fragment
+        android:id="@+id/process"
+        android:name="com.example.rama.fragments.processFragment"
+        android:label="fragment_process"
+        tools:layout="@layout/fragment_process" >
+        <action
+            android:id="@+id/action_processFragment_to_newsFragment"
+            app:destination="@id/news" />
+        <action
+            android:id="@+id/action_process_to_listaDeProcesosDelFile"
+            app:destination="@id/listaDeProcesosDelFile" />
+    </fragment>
+    <fragment
+        android:id="@+id/news"
+        android:name="com.example.rama.fragments.newsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_profileFragment"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.rama.fragments.profileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addActuacion"
+        android:name="com.example.rama.fragments.addActuacion"
+        android:label="fragment_add_actuacion"
+        tools:layout="@layout/fragment_add_actuacion" />
+    <fragment
+        android:id="@+id/addProceso"
+        android:name="com.example.rama.fragments.addProceso"
+        android:label="fragment_add_proceso"
+        tools:layout="@layout/fragment_add_proceso" >
+        <action
+            android:id="@+id/action_addProceso_to_loadMoreProcessTypesFragment"
+            app:destination="@id/loadMoreProcessTypesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadMoreProcessTypesFragment"
+        android:name="com.example.rama.dialogFragments.LoadMoreProcessTypesFragment"
+        android:label="fragment_load_more_process_types"
+        tools:layout="@layout/fragment_load_more_process_types" />
+    <fragment
+        android:id="@+id/fichaDelProcesoFragment"
+        android:name="com.example.rama.fragments.fichaDelProcesoFragment"
+        android:label="fragment_ficha_del_proceso"
+        tools:layout="@layout/fragment_ficha_del_proceso" >
+        <action
+            android:id="@+id/action_fichaDelProcesoFragment_to_editFichaFragment"
+            app:destination="@id/editFichaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaDeProcesosDelFile"
+        android:name="com.example.rama.fragments.listaDeProcesosDelFile"
+        android:label="fragment_lista_de_procesos_del_file"
+        tools:layout="@layout/fragment_lista_de_procesos_del_file" >
+        <action
+            android:id="@+id/action_listaDeProcesosDelFile_to_fichaDelProcesoFragment"
+            app:destination="@id/fichaDelProcesoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFichaFragment"
+        android:name="com.example.rama.dialogFragments.editFichaFragment"
+        android:label="fragment_edit_ficha"
+        tools:layout="@layout/fragment_edit_ficha" />
+</navigation>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="AÑADE UN NUEVO PROCESO"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#ABDCEF"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="AÑADE UN NUEVO PROCESO"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/teal_700"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="9dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Radicado:" />
+
+            <EditText
+                android:id="@+id/etRadicado"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="4dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Tipo de Proceso:"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinnerProcess"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="28dp"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tvFindOtherProcess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿No encuentras tu proceso?, Buscalo acá"
+                android:textSize="12sp"
+                android:layout_margin="6dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Juzgado:"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/etJuzgado"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="4dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Accionante:"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/etAccionante"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Accionado:"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/etAccionado"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Descripción (opcional)"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="4"
+                android:layout_marginTop="8dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:layout_marginLeft="4dp"
+                android:textSize="12sp"
+                android:singleLine="false"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btnAddDateManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2FFFFFFF"
+            android:text="Agregar fecha y hora manualmente"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tvInfoForAddDate"
+            android:layout_width="349dp"
+            android:layout_height="34dp"
+            android:text="Definir fecha(opcional, en caso de que no desee el modo automático)"
+            android:visibility="invisible"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="4dp"
+                android:text="Fecha:"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/tvInsertDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginTop="7dp"
+                android:text="__________"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:layout_marginLeft="4dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFechaFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tvArray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSaveAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:text="Guardar" />
+
+
+</FrameLayout>
